@@ -5,46 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Week 7</title>
-    <link rel="stylesheet" href="src/style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Weather</h1>
-      <form id="search-form">
-        <input
-          type="text"
-          placeholder="Type a city..."
-          autocomplete="off"
-          autofocus="on"
-          id="city-input"
-        />
-        <input type="submit" value="Search" />
-      </form>
-      <button id="current">Current</button>
-      <p id="current-display"></p>
-      <h1 id="city">Omaha, NE</h1>
-      <p id="time">The time is</p>
-      <p id="description">Partly Cloudy</p>
-      <p id="temperature">🌤 19 C | F</p>
-      <p id="humidity"></p>
-      <p id="wind"></p>
-      <p>
-        <a href="https://github.com/carls25/backup.git"> Open Source Code</a> by
-        Carlie Stevens
-      </p>
+      <div class="display-box">
+        <h1>Weather</h1>
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Type a city..."
+            autocomplete="off"
+            autofocus="on"
+            id="city-input"
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <button id="current">Current</button>
+        <p id="current-display"></p>
+        <h2 id="city"></h2>
+        <p id="time"></p>
+        <p id="description"></p>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+      </div>
     </div>
+    <p class="wrapper">
+      <a href="https://github.com/carls25/backup.git"> Open Source Code</a>
+      by Carlie Stevens
+    </p>
     <script src="src/app.js"></script>
   </body>
 </html>
